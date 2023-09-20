@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="#about-me" id="nav-title">Pwint Thiri Ko</a>
+        <div class="nav-list-wrapper" id="nav-menu">
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#about-me" class="nav-link">
+                        <i class="uil uil-user nav-icon"></i>ABOUT ME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">
+                        <i class="uil uil-bag nav-icon"></i>PORTFOLIO
+                    </a>
+                </li>
+                <li class="nav-item inactive-link">
+                    <a  class="nav-link">
+                        <i class="uil uil-scenery nav-icon"></i>GALLERY (WIP)
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="./gallery.html" class="nav-link">
+                        <i class="uil uil-scenery nav-icon"></i>GALLERY
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="uil uil-comment-lines nav-icon"></i>CONTACT
+                    </a>
+                </li>                
+            </ul>
+
+        </div>
+        <div class="nav-btns">
+            <i class="uil uil-moon nav-item" id="theme-button"></i>
+            <i class="uil uil-bars" id="nav-toggle"></i>
+        </div>
+    </nav>
+
+    <section class="about" id="about">
+        <div class="about-top-section">
+            <div class="section-title about">ABOUT ME</div>
+            <img id="profile-photo"/>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-content-1">Hi, I'm Hazel!</div>
+            <div class="about-content-2">I am a Year 3 Business Analytics student in NUS, second majoring in Economics. 
+                I am a highly motivated individual willing to try new things and learn from various experiences. 
+                I'm passionate about using technology to solve problems and make a positive impact. </div>
+        </div>
+
+        <div class="btns download-btn">
+            <a href="assets/Pwint Thiri Ko_Resume.pdf" target="_blank" download="Pwint Thiri Ko_CV">
+                <i class="uil uil-download-alt"></i>
+                Download CV
+            </a>
+        </div>
+    </section>
+
+    <section class="portoflio" id="portfolio">
+        <div class="portfolio-title">
+            <div class="section-title">PORTFOLIO</div>
+            <div class="portfolio-title-block"></div>
+        </div>
+        <div class="cards-container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+
+            <div class="slider-btn" id="prev-btn"><</div>
+            <div class="cards">
+                <label class="carousel-card" for="item-1" id="card-1">
+                    <div class="portfolio-img">
+                        <img class="carousel-img" src="./assets/img/ALS.png"/>
+                    </div>
+                    <div class="carousel-content">
+                        <div class="carousel-header">A LIBRARY SYSTEM</div>
+                        <div class="carousel-text">A Library System (ALS) is a module group project for BT2102. It supports basic CRUD functions regarding memberships, books, reservations, fines and book search. We used SQL, Python and TKinter.</div>
+                        
+                    </div>
+                    <a href="https://github.com/pwintthiri/BT2102-ALS" target="_blank" class="btns carousel-btn">Link to project</a>
+                </label>
+                <label class="carousel-card" for="item-2" id="card-2">
+                    <div class="portfolio-img">
+                        <img class="carousel-img" src="./assets/img/trackmyday.png"/>
+                        <div class="carousel-content">
+                            <div class="carousel-header">TRACK MY DAY</div>
+                            <div class="carousel-text">Track My Day is an Orbital project completed during the summer of 2022. This is a mobile application that aims to improve productivity. It includes a habit tracker, habit analytics, notes, to-do lists and more. We used React Native and Firebase.</div>
+                        
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=0sXy3uWyvM4" target="_blank" class="btns carousel-btn">Demo Video</a>
+                    </div>
+                </label>
+                <label class="carousel-card" for="item-3" id="card-3">
+                    <div class="portfolio-img">
+                        <img class="carousel-img" src="./assets/img/rchn.png"/>
+                        <div class="carousel-content">
+                            <div class="carousel-header">VIDEO EDITING</div>
+                            <div class="carousel-text">Collaborated with a friend to edit a promo video for a Halloween Haunted House event for my RC.  </div>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=aFxlEgs7nuQ" target="_blank" class="btns carousel-btn">Watch Video</a>
+                    </div>
+                </label>
+                <label class="carousel-card" for="item-4" id="card-4">
+                    <div class="portfolio-img">
+                        <img class="carousel-img" src="./assets/img/sewing.jpeg"/>
+                        <div class="carousel-content">
+                            <div class="carousel-header">SEWING</div>
+                            <div class="carousel-text">I also enjoy sewing! These are some of the items I've made so far. </div>
+                        </div>
+                        <a class="btns carousel-btn">Gallery (in progress!)</a>
+                        <!-- <a href="./gallery.html" class="btns carousel-btn">Gallery</a> -->
+                    </div>
+                </label>
+            </div>
+            <div class="slider-btn" id="next-btn">></div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-title section-title">
+            <div class="contact-title-block">
+                <div class="contact-title-line"></div>
+                <div class="contact-title-line"></div>
+            </div>
+            <div class="contact-header-text">CONTACT</div>
+            <div class="contact-title-block">
+                <div class="contact-title-line"></div>
+                <div class="contact-title-line"></div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-text">Get in touch.</div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/pwintthiriko/" target="_blank" class="uil uil-linkedin"></a>
+                    <a href="https://github.com/pwintthiri" target="_blank" class="uil uil-github"></a>
+                    <a href="mailto: pwintthiriko2001@gmail.com" target="_blank" class="uil uil-envelope-alt"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/9d9bc967f5b36808db100ba79c09d25c" method="POST">
+                    <!-- redirect to main website page -->
+                    <input type="hidden" name="_next" value="https://pwintthiri.github.io/personal-portfolio">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" name="message" required></textarea>
+
+                    <button class="btns submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-text">© Pwint Thiri Ko 2023</div> 
+    </footer>
+
+
+
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
